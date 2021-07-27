@@ -1,0 +1,75 @@
+{
+    "serverPort": "FLEX_WEB_SYSCFG_API_PORT",
+    "dbConfigs": [
+        {
+            "host": "10.27.3.37",
+            "port": 1433,
+            "dbName": "",
+            "user": "oms1710usr",
+            "password": "oms1710usr1"
+        }
+    ],
+    "customEntitiesFilePath": "./config/customEntities.json",
+    "oms": [
+        {
+            "omHost": "centos7-lvm",
+            "omPort": "14527"
+        }
+    ],
+    "logLevel": "debug",
+    "flexAppServerUrl": [
+        {
+            "host": "localhost",
+            "port": "FLEX_WEB_SYSCFG_CP_USER_PORT"
+        }
+    ],
+    "sysSideFileHandler": [
+        {
+            "host": "localhost",
+            "port": "FLEX_WEB_SYSCFG_FILEHANDLER_PORT"
+        }
+    ],
+    "DBXMLUrl": {
+        "host": "localhost",
+        "port": "FLEX_WEB_SYSCFG_FILEHANDLER_PORT"
+    },
+    "defaultUserNameForTrader": "FLEX_WEB_SYSCFG_DEFAULT_USER_FOR_TRADER",
+    "title": "FLEX_WEB_SYSCFG_CONFIG_TITLE",
+    "proxySettings": {
+        "username": "abcd",
+        "password": "abcd1234"
+    },
+    "isDevEnv": true,
+    "isAutoLoginAllowed": true,
+    "publishUpdatesUrl": [
+        {
+            "url": "http://localhost:3000/DBUpdates",
+            "sslEnabled": false,
+            "caFile": "./certificates/selfsigned.crt",
+            "certificateFile": "./certificates/selfsigned.crt",
+            "keyFile": "./certificates/selfsigned.key"
+        }
+    ],
+    "omConnTimeOutInSecs": 60,
+    "flexAppVersionsFilePath": "./FlexAppVersions.json",
+    "omAdminPort": "FLEX_WEB_SYSCFG_OM_ADMIN_PORT",
+    "sessionAge": 60,
+    "certificates": {
+        "keyFilePath": "./certificates/selfsigned.key",
+        "certFilePath": "./certificates/selfsigned.crt"
+    },
+    "enableSAMLAuth": false,
+    "samlFederationMetadata": "https://ftindadtest.in.flextestdc.com/FederationMetadata/2007-06/FederationMetadata.xml",
+    "sysCfgUrls": {
+        "web": "http://localhost:8080",
+        "api": "https://localhost:9000"
+    },
+    "userIdentityCol": "mm_user_email",
+    "importDir": "./importDir",
+    "exportDir": "./exportDir",
+    "rowsPerPage": 30,
+    "timezone": "EST",
+    "invalidCharacterRegex": "[^\\x20-\\x5D \\x5F-\\x7E \\n]",
+    "omNotifierPort": "FLEX_WEB_SYSCFG_OM_NOTIFIER_PORT",
+    "traderPasswordRegex": ""
+}
